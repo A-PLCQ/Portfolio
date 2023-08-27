@@ -53,18 +53,34 @@ a{
 	color: #fff;
 }
 
+::-webkit-scrollbar {
+    width: 8px
+}
+
+::-webkit-scrollbar-track {
+    background-color: #111
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #986dff;
+    border-radius: 8px
+}
+
 /* Path: src\css\style.css */
 
 body{
     background-color: #111;
     font-family: "Archivo";
-    font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     color: #fefefe;
     overflow-x: hidden;
 }
 
+html{
+    scroll-behavior: smooth;
+    font-size: 12px;
+}
 .cont {
     max-width: 1140px;
     margin: 0 auto
@@ -74,18 +90,40 @@ body{
 
 header {
     padding: 0px 50px;
+    background: #111;
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     border-bottom: 1px solid #101013;
-    background-color: #111;
     z-index: 999;
     width: 100%;
     position: fixed;
+    top: 0;
+    left: 0
+}
+
+.logo {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fefefe;
+    margin-right: 24px;
+}
+
+.logo span {
+    background-color: #986dff; 
+    color: white; 
+    padding: 5px 10px; 
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 992px) {
     header {
-        padding: 0px 24px
+        padding: 0 24px;
+    }
+    
+    header nav .nav-list li {
+        margin-left: 0;
     }
 }
 
@@ -95,7 +133,7 @@ header nav {
     align-items: center;
     flex-wrap: wrap;
     height: 100px;
-    padding: 0px 8px;
+    padding: 0 8px;
 }
 
 header nav img {
@@ -105,22 +143,13 @@ header nav img {
 header nav .nav-list {
     list-style: none;
     display: flex;
-}
-
-header nav .nav-list li {
-    margin-left: 48px;
-}
-
-@media screen and (max-width: 992px) {
-    header nav .nav-list li {
-        margin-left: 0px;
-    }
+    gap: 48px;
 }
 
 header nav .nav-list li a {
     color: #9ca3af;
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 header nav .nav-list li a::after {
@@ -133,7 +162,7 @@ header nav .nav-list li a::after {
     left: 0;
     background: linear-gradient(270deg, #986dff 0%, #17161d 100%);
     transform-origin: bottom right;
-    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1);
+    transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 header nav .nav-list li a:hover::after {
@@ -145,8 +174,9 @@ header nav .nav-list li a:hover {
     color: #fff;
 }
 
+
 .mobile-menu {
-    display: none;
+    display: none
 }
 
 .mobile-menu div {
@@ -154,41 +184,41 @@ header nav .nav-list li a:hover {
     height: 1px;
     background-color: #fff;
     margin: 8px;
-    transition: .4s;
+    transition: .4s
 }
 
 .nav-list.active {
     visibility: initial;
-    transition: 1s all ease;
+    transition: 1s all ease
 }
 
 @keyframes navLinkFade {
     from {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(100px)
     }
 
     to {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateX(0)
     }
 }
 
 .mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
+    transform: rotate(-45deg) translate(-8px, 8px)
 }
 
 .mobile-menu.active .line2 {
-    opacity: 0;
+    opacity: 0
 }
 
 .mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -5px);
+    transform: rotate(45deg) translate(-5px, -5px)
 }
 
 @media screen and (max-width: 992px) {
     body {
-        overflow-x: hidden;
+        overflow-x: hidden
     }
 
     .nav-list {
@@ -202,96 +232,95 @@ header nav .nav-list li a:hover {
         background-color: #151515;
         flex-direction: column;
         padding-top: 96px;
-        visibility: hidden;
+        visibility: hidden
     }
 
-    header nav .nav-list li {
+    header .cont nav .nav-list li {
         opacity: 0;
-        margin-bottom: 48px;
+        margin-bottom: 48px
     }
 
-    header nav .nav-list li a {
-        font-size: 2.4rem;
+    header .cont nav .nav-list li a {
+        font-size: 2.4rem
     }
 
     .mobile-menu {
-        display: block;
+        display: block
     }
 }
 
 /* Home */
-
 #s-home {
     padding: 0px 50px;
     background-color: #111;
-    position: relative;
+    position: relative
 }
 
 @media screen and (max-width: 992px) {
     #s-home {
-        padding: 100px 20px 0px 20px;
+        padding: 100px 20px 0px 20px
     }
 }
 
-#s-home #home {
+#s-home .cont #home {
     display: flex;
     align-items: center;
     min-height: 90vh;
     padding: 200px 0px;
     overflow: hidden;
-    width: 100%;
+    width: 100%
 }
 
 @media screen and (max-width: 992px) {
-    #s-home #home {
-        padding: 0px;
+    #s-home .cont #home {
+        padding: 0px
     }
 }
 
-#s-home #home #home-container-text {
+#s-home .cont #home #home-container-text {
     width: 100%;
-    flex-direction: column;
+    flex-direction: column
 }
 
 @media screen and (max-width: 992px) {
-    #s-home #home #home-container-text {
+    #s-home .cont #home #home-container-text {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
         text-align: center;
-        padding: 0px;
+        padding: 0px
     }
 }
 
-#s-home #home #home-container-text h1 {
+#s-home .cont #home #home-container-text h1 {
     color: #fff;
     max-width: 650px;
     line-height: 140%;
-    font-size: 4rem;
-    font-weight: 500;
+    font-size: 3rem;
+    font-weight: 500
 }
 
 @media screen and (max-width: 992px) {
-    #s-home #home #home-container-text h1 {
-        font-size: 3.2rem;
+    #s-home .cont #home #home-container-text h1 {
+        font-size: 2.5rem
     }
 }
 
-#s-home #home #home-container-text h1 span {
-    color: #986dff;
+#s-home .cont #home #home-container-text h1 span {
+    color: #986dff
 }
 
-#s-home #home #home-container-text p {
+#s-home .cont #home #home-container-text p {
     color: #9ca3af;
     font-size: 2rem;
     max-width: 600px;
     margin: 40px 0px;
     font-weight: 300;
-    line-height: 160%;
+    line-height: 160%
 }
 
-#s-home #home #home-container-text a {
+#s-home .cont #home #home-container-text a {
     background: #986dff;
     color: #fff;
     backdrop-filter: blur(10px);
@@ -304,37 +333,35 @@ header nav .nav-list li a:hover {
     transition: all .4s ease;
     margin-top: 30px;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 400
 }
 
-#s-home #home #home-container-text a:hover {
+#s-home .cont #home #home-container-text a:hover {
     padding: 20px 45px;
-    max-width: 270px;
+    max-width: 270px
 }
 
-#s-home #home #logo {
+#s-home .cont #home #logo {
     position: absolute;
     right: -50px;
     top: 50%;
-    transform: translate(0%, -50%);
+    transform: translate(0%, -50%)
 }
 
 @media screen and (max-width: 1200px) {
-    #s-home #home #logo {
-        display: none;
+    #s-home .cont #home #logo {
+        display: none
     }
 }
-
 /* About */
-
 #s-about {
     padding: 72px 0px;
-    background-color: #111;
+    background-color: #111
 }
 
 @media screen and (max-width: 1200px) {
     #s-about {
-        padding: 72px 20px;
+        padding: 72px 20px
     }
 }
 
@@ -346,37 +373,42 @@ header nav .nav-list li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 32px;
-    height: auto;
+    height: auto
+}
+
+@media screen and (max-width: 1200px) {
+    #s-about .cont>div {
+        flex-wrap: wrap;
+        gap: 32px
+    }
 }
 
 #s-about .cont>div #creator-photo {
     width: 47%;
-    background-image: url("../image/foto-iuricode.svg");
+    background-image: url("../assets/img/creator.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: 4px;
-    height: 500px;
+    height: 500px
 }
 
 @media screen and (max-width: 1200px) {
     #s-about .cont>div #creator-photo {
         width: 100%;
-        height: 400px;
+        height: 400px
     }
 }
 
 @media screen and (max-width: 992px) {
     #s-about .cont>div #creator-photo {
-        height: 350px;
+        height: 350px
     }
 }
 
 @media screen and (max-width: 768px) {
     #s-about .cont>div #creator-photo {
-        height: 300px;
+        height: 300px
     }
 }
 
@@ -389,16 +421,16 @@ header nav .nav-list li a:hover {
     text-align: center;
     font-size: 1.4rem;
     font-weight: 500;
-    margin: 16px;
+    margin: 16px
 }
 
 #s-about .cont>div div:nth-child(2) {
-    width: 49%;
+    width: 49%
 }
 
 @media screen and (max-width: 1200px) {
     #s-about .cont>div div:nth-child(2) {
-        width: 100%;
+        width: 100%
     }
 }
 
@@ -406,12 +438,12 @@ header nav .nav-list li a:hover {
     font-size: 4rem;
     font-weight: 500;
     margin: 16px 0px;
-    color: #fff;
+    color: #fff
 }
 
 @media screen and (max-width: 992px) {
     #s-about .cont>div div:nth-child(2) h2 {
-        font-size: 3.2rem;
+        font-size: 3.2rem
     }
 }
 
@@ -419,125 +451,170 @@ header nav .nav-list li a:hover {
     font-size: 1.8rem;
     font-weight: 300;
     margin-bottom: 16px;
-    color: #fff;
+    color: #fff
 }
 
 #s-about .cont>div div:nth-child(2) h4 {
     font-size: 2rem;
     font-weight: 500;
-    color: #986dff;
+    color: #986dff
 }
 
 #s-about .cont>div div:nth-child(2) p {
     font-size: 1.8rem;
     color: #9ca3af;
     line-height: 160%;
-    margin: 32px 0px 48px 0px;
+    margin: 32px 0px 48px 0px
 }
 
 #s-about .cont>div div:nth-child(2) nav ul {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 16px;
+    gap: 16px
+}
+
+@media screen and (max-width: 1200px) {
+    #s-about .cont>div div:nth-child(2) nav ul {
+        flex-wrap: wrap
+    }
 }
 
 #s-about .cont>div div:nth-child(2) nav ul a {
     background-color: #111;
     border: 2px solid #1f1f1f;
     border-radius: 6px;
-    padding: 16px;
+    padding: 16px
 }
 
 @media screen and (max-width: 1200px) {
     #s-about .cont>div div:nth-child(2) nav ul a img {
-        width: 40px;
+        width: 40px
     }
 }
 
 #s-about .cont>div div:nth-child(2) nav ul a:hover {
-    border-color: #986dff;
+    border-color: #986dff
 }
 
 /* Experience */
+
+#s-experience {
+    background-color: #151515;
+    color: #fff;
+    padding: 96px 48px
+}
+
+@media screen and (max-width: 992px) {
+    #s-experience {
+        padding: 48px 24px
+    }
+}
 
 #s-experience .cont h2 {
     padding-bottom: 24px;
     color: #fff;
     font-size: 4rem;
-    font-weight: 500;
+    font-weight: 500
 }
 
 #s-experience .cont h2 span {
-    color: #986dff;
+    color: #986dff
 }
 
 #s-experience .cont #experience {
     margin-top: 32px;
     display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
+    gap: 40px
+}
+
+@media screen and (max-width: 1200px) {
+    #s-experience .cont #experience {
+        flex-wrap: wrap
+    }
 }
 
 #s-experience .cont #experience .option-experience {
     display: flex;
-    width: 100%;
-    flex-direction: column;
+    width: 25%;
+    flex-direction: column
+}
+
+@media screen and (max-width: 1200px) {
+    #s-experience .cont #experience .option-experience {
+        width: 100%
+    }
 }
 
 #s-experience .cont #experience .option-experience .activeExperience {
     border-left: 4px solid #986dff;
-    color: #986dff;
-    font-weight: 600;
+    color: #986dff
+}
+
+#s-experience .cont #experience .option-experience .activeExperience h3 {
+    font-weight: 600
 }
 
 #s-experience .cont #experience .option-experience>div {
     padding: 24px 32px;
     text-align: left;
     background-color: #111;
-    border-left: 4px solid #111;
-    cursor: pointer;
+    border-left: 4px solid #111
+}
+
+#s-experience .cont #experience .option-experience>div:hover {
+    cursor: pointer
 }
 
 #s-experience .cont #experience .option-experience>div h3 {
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: 400
 }
 
 #s-experience .cont #experience .text-experience {
-    width: 100%;
+    width: 75%
+}
+
+@media screen and (max-width: 1200px) {
+    #s-experience .cont #experience .text-experience {
+        width: 100%
+    }
 }
 
 #s-experience .cont #experience .text-experience>div {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 32px;
+    justify-content: space-between
+}
+
+@media screen and (max-width: 1200px) {
+    #s-experience .cont #experience .text-experience>div {
+        flex-wrap: wrap;
+        gap: 32px
+    }
 }
 
 #s-experience .cont #experience .text-experience>div h4 {
     font-size: 2.4rem;
-    font-weight: 400;
+    font-weight: 400
 }
 
 #s-experience .cont #experience .text-experience>div p {
     font-size: 1.8rem;
-    color: #9ca3af;
+    color: #9ca3af
 }
 
 #s-experience .cont #experience .text-experience h5 {
     font-size: 2rem;
     margin: 32px 0px;
     font-weight: 500;
-    color: #986dff;
+    color: #986dff
 }
 
 #s-experience .cont #experience .text-experience p {
     font-size: 2rem;
     line-height: 160%;
     color: #9ca3af;
-    font-weight: 400;
+    font-weight: 400
 }
 
 
@@ -608,11 +685,11 @@ header nav .nav-list li a:hover {
     flex-grow: 1;
     border: 1px solid #111;
     transition: 1s all ease;
-    height: auto
 }
 
 #s-projects .cont #projects>article:hover {
     border: 1px solid #986dff
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -707,13 +784,184 @@ header nav .nav-list li a:hover {
     transform-origin: bottom left
 }
 
-#s-services {
+/* Skills */
+
+#s-skills {
     padding: 96px 48px;
-    background-color: #151515
+    background-color: #111
 }
 
 @media screen and (max-width: 992px) {
-    #s-services {
+    #s-skills {
         padding: 48px 24px
+    }
+}
+
+#s-skills .cont #skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 8px
+}
+
+#s-skills .cont #skills div,
+#s-skills .cont #skills article {
+    width: 50%
+}
+
+@media screen and (max-width: 1200px) {
+
+    #s-skills .cont #skills div,
+    #s-skills .cont #skills article {
+        width: 100%
+    }
+}
+
+#s-skills .cont #skills #skills-text {
+    min-height: 400px
+}
+
+@media screen and (max-width: 768px) {
+    #s-skills .cont #skills #skills-text {
+        min-height: auto
+    }
+}
+
+#s-skills .cont #skills #skills-text h2 {
+    margin-bottom: 32px;
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 500
+}
+
+#s-skills .cont #skills #skills-text h2 span {
+    color: #986dff
+}
+
+#s-skills .cont #skills #skills-text .changeDescription {
+    transition: 2s all ease
+}
+
+@media screen and (max-width: 768px) {
+    #s-skills .cont #skills #skills-text .changeDescription {
+        display: none
+    }
+}
+
+#s-skills .cont #skills #skills-text p {
+    max-width: 500px;
+    line-height: 3.2rem;
+    color: #9ca3af;
+    font-size: 1.8rem
+}
+
+#s-skills .cont #skills #skills-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px
+}
+
+@media screen and (max-width: 1200px) {
+    #s-skills .cont #skills #skills-cards {
+        margin-top: 48px
+    }
+}
+
+#s-skills .cont #skills #skills-cards article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 20%;
+    flex-grow: 1;
+    height: 130px;
+    background-color: #151515;
+    position: relative;
+    border: 1px solid #1f1f1f;
+    border-radius: 4px;
+    transition: 1s all ease
+}
+
+#s-skills .cont #skills #skills-cards article:hover {
+    border: 1px solid #986dff
+}
+
+@media screen and (max-width: 768px) {
+    #s-skills .cont #skills #skills-cards article {
+        width: 40%
+    }
+}
+
+
+/* footer */
+
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #151515;
+    color: #fff;
+    padding: 24px 0px
+}
+
+footer .cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%
+}
+
+footer p {
+    font-size: 1.8rem
+}
+
+footer p a {
+    font-weight: 500;
+    color: #986dff
+}
+
+footer img {
+    width: 100px
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    gap: 16px
+}
+
+@media screen and (max-width: 1200px) {
+    footer .cont {
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 48px
+    }
+
+    footer .cont div {
+        display: none
+    }
+}
+
+.typewriter:after {
+    content: "|";
+    margin-left: 8px;
+    opacity: 1;
+    animation: blink 1s infinite;
+    color: #986dff
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0
     }
 }

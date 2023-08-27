@@ -9,92 +9,94 @@ initScrollReveal();
 typeWrite(document.querySelector(".typewriter"));
 
 hoverChangeExperience(
-  ".digitalhouse",
-  `Trabalhei como instrutor conteudista em frontend na
-  Digital House, o trabalho consistia em criar conteúdos para as
-  aulas de especialização frontend. Alguns temas dos conteúdos
-  realizados foram: React, Redux, TypeScript, Testes,
-  GraphQL, Next.js, MUI, React Hook Form e styled-components.`,
-  "Professor conteudista em Frontend",
-  "Digital House",
-  "Nov 2021 - Nov 2022 (1 ano)"
+  ".engie",
+  `Technicien de Déploiement de Fibre Optique chez Engie Solutions, 
+  j'ai été impliqué dans le déploiement de réseaux à haut débit. 
+  Mon rôle consistait à installer la fibre optique, 
+  exécuter des tests pour assurer une connectivité optimale. 
+  Cette expérience m'a permis de maîtriser les technologies, 
+  en développant mes compétences en travail d'équipe 
+  et en résolution de problèmes.`,
+  "Déploiement de Fibre Optique",
+  "Technicien Optique",
+  "2020 - 2021 (3 mois)"
 );
 
 hoverChangeExperience(
-  ".zuplae",
-  `Trabalhei como Social Media e Designer na Zuplae que é um escola
-  de programação, onde teve como foco as criações de conteúdos sobre
-  programação para a comunidade dev através das redes sociais.`,
-  "Social Media e UI Designer",
-  "Zuplae",
-  "Jan 2022 - Abril 2022 (4 meses)"
+  ".novadem",
+  `Chez Novadem, une entreprise spécialisée dans les drones de surveillance 
+  pour l'armée française, j'ai contribué au développement et 
+  à la fabrication de drones. 
+  Mon rôle consistait à garantir la qualité, la conformité 
+  aux normes de sécurité. Collaborer avec des ingénieurs pour 
+  résoudre des défis techniques. Mon temps chez Novadem a enrichi
+  mes compétences et en gestion de projets technologiques.`,
+  "Conception de drones de surveillance",
+  "Technicien en conception de drones",
+  "2022 - 2022 (2 mois)"
 );
 
 hoverChangeExperience(
-  ".codigofontetv",
-  `Trabalhei como Social Media e Designer no Código Fonte TV, 
-  onde teve como foco as criações de conteúdos sobre programação 
-  para a comunidade dev através das redes sociais.`,
-  "Social Media e Designer",
-  "Código Fonte TV",
-  "Jun 2021 - Jan 2022 (8 meses)"
+  ".corner",
+  `Parallèlement à mes études, je travaille en tant que barman.
+  Cette expérience m'a permis de développer des compétences en service
+  à la clientèle, en gestion du temps et en travail sous pression.
+  En tant que barman, je m'efforce de créer une atmosphère accueillante,
+  de préparer et de servir des boissons de qualité, tout en interagissant 
+  efficacement avec les clients pour répondre à leurs besoins. 
+  Cette expérience m'a permis d'améliorer mes compétences en communication 
+  et ma capacité à travailler de manière autonome dans un environnement 
+  dynamique.`,
+  "Barman",
+  "Corner Bistro",
+  "2023"
 );
 
 hoverChangeExperience(
-  ".contweb",
-  `Realizei o estágio na ContWeb, uma empresa de contabilidade. 
-  Onde pela primeira vez tive experiência com o React. Além do
-  desenvolvimento frontend criei os designs da nova plataforma da empresa.`,
-  "Developer frontend e UI Designer",
-  "ContWeb",
-  "Set 2021 - Nov 2021 (3 meses)"
+  ".ynov",
+  `Ynov est une école d'ingénieurs qui propose des formations en informatique,
+  en design et en business. J'ai choisi de suivre le cursus informatique
+  pour acquérir des compétences en développement et programmation.
+  J'ai également choisi prévue de suivre le cursus en alternance pour acquérir
+  une expérience professionnelle et développer mes compétences en gestion
+  de projet. J'ai choisi Ynov, car c'est une école qui offre une formation
+  de qualité et qui est reconnue par les entreprises.`,
+  "Etudiant developpeur",
+  "Ynov Aix-en-Provence",
+  "2éme année"
 );
+
 
 hoverChangeDescription(
   ".html",
-  "HTML é uma linguagem de marcação, onde marcamos os elementos para definir quais informações a página vai exibir."
+  "HTML est un langage de balisage dans lequel nous marquons des éléments pour définir les informations que la page affichera."
 );
 hoverChangeDescription(
   ".css",
-  "CSS é uma linguagem de folha de estilo composta por “camadas”, criado com o propósito de estilizar as páginas."
+  "CSS est un langage de page de style composé de « couches », créé dans le but de styliser les pages."
 );
 hoverChangeDescription(
   ".js",
-  "JavaScript é uma linguagem de programação que permite a você implementar elementos dinâmicos em páginas web."
-);
-hoverChangeDescription(
-  ".sass",
-  "Sass é um pré-processador CSS que adiciona alguns recursos que não estão disponíveis de forma nativa."
-);
-hoverChangeDescription(
-  ".react",
-  "React é uma biblioteca JavaScript com foco em criar interfaces de usuário de forma componetizada."
+  "JavaScript est un langage de programmation qui vous permet d'implémenter des éléments dynamiques dans des pages Web."
 );
 hoverChangeDescription(
   ".next",
-  "Next.js é uma estrutura da web que permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para web baseados em React."
+  "Next.js est un framework Web qui permet des fonctionnalités telles que le rendu côté serveur et la génération de sites Web."
 );
 hoverChangeDescription(
-  ".styled",
-  "styled-components é uma biblioteca que utiliza o conceito de CSS-in-JS, ou seja, que nos permite escrever códigos CSS dentro do Javascript."
+  ".vue",
+  "Vue.js est un framework JavaScript open-source utilisé pour développer des interfaces utilisateur et des applications Web à page unique."
 );
 hoverChangeDescription(
-  ".tailwind",
-  "Tailwind CSS é um framework CSS que nos fornece classes utilitárias com o propósito de estilizar as páginas."
+  ".canva",
+  "Canava est un outil de conception graphique en ligne qui permet de créer des graphiques, des présentations, des affiches, des documents et d'autres contenus visuels."
 );
 hoverChangeDescription(
-  ".typescript",
-  "TypeScript é um superset do JavaScript que incluir recursos que não estão presentes na linguagem de forma nativa, além de torná-la estática."
+  ".figma",
+  "Figma est un outil de conception d'interface utilisateur basé sur le Web, avec un navigateur pour l'interface utilisateur de conception graphique et un navigateur distinct pour le prototypage."
 );
 hoverChangeDescription(
-  ".radix",
-  "Radix é uma biblioteca que fornece componentes acessíveis e sem estilos para a criação de aplicação em React."
+  ".cisco",
+  "Cisco est une entreprise technologique mondiale qui conçoit, fabrique et vend des équipements de réseau."
 );
-hoverChangeDescription(
-  ".cypress",
-  "Cypress é um framework para automação de testes end-to-end, onde atualmente usa a linguagem JavaScript."
-);
-hoverChangeDescription(
-  ".storybook",
-  "Storybook é uma ferramenta que tem como objetivo documentar e testar os componentes da aplicação."
-);
+
