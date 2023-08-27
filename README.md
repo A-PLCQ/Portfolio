@@ -27,8 +27,8 @@ Ici, je mets en évidence mes compétences en développement web et en programma
 
 ## Contact
 N'hésitez pas à me contacter si vous avez des questions, des commentaires ou des opportunités de collaboration :
-- Email : votre@email.com
-- LinkedIn : [votre profil LinkedIn](https://www.linkedin.com/in/augustin-plumecocq/)
+- Email : Plumecocq.augustin@gmail.com
+- LinkedIn : [https://www.linkedin.com/in/augustin-plumecocq/]
 
 ## Note
 Ce portfolio est une page unique qui présente de manière concise mes compétences et mon parcours. Il est en constante évolution au fur et à mesure que j'acquiers de nouvelles connaissances et expériences.
