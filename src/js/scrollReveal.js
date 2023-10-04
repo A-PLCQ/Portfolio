@@ -2,7 +2,7 @@ export function initScrollReveal() {
   const sr = ScrollReveal({
     origin: "top",
     distance: "50px",
-    duration: 2000,
+    duration: 20,
   });
 
   sr.reveal(".delaySmallReveal", { delay: 200 });
