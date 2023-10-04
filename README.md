@@ -23,7 +23,7 @@ Ici, je mets en évidence mes compétences en développement web et en programma
 - JavaScript
 
 ## Capture d'écran
-![Aperçu du Portfolio](src/assets/img/Capture.png) 
+![Aperçu du Portfolio](src/assets/img/capture.png) 
 
 ## Contact
 N'hésitez pas à me contacter si vous avez des questions, des commentaires ou des opportunités de collaboration :
