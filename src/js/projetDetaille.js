@@ -12,9 +12,6 @@ export function detaille() {
         button.addEventListener('click', () => {
             const projectCard = button.closest('.project-details-card');
             projectCard.classList.remove('show');
-            setTimeout(() => {
-                projectCard.style.display = 'none';
-            }, 400); // Match the transition duration
         });
     });
 }
