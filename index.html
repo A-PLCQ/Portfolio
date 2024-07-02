@@ -5,7 +5,8 @@
     <!-- En-tête de la page avec des informations méta -->
     <meta charset="UTF-8" />
     <meta name="author" content="A-PLCQ" />
-    <meta name="description" content="Je m'appelle augustin, je développe des interfaces modernes et de haute qualité, en mettant l'accent sur les performances, les animations, la réactivité et le référencement." />
+    <meta name="description"
+        content="Je m'appelle augustin, je développe des interfaces modernes et de haute qualité, en mettant l'accent sur les performances, les animations, la réactivité et le référencement." />
     <meta name="keywords" content="sites, web, développement, frontend, site web, portfolio" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#986DFF" />
@@ -20,6 +21,7 @@
 
     <!-- Liens vers les fichiers CSS -->
     <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="icon" href="/src/assets/icons/AP-_2_.svg">
 
     <!-- Titre de la page -->
     <title>Portfolio // A-PLCQ </title>
@@ -54,16 +56,19 @@
                 <div id="home">
                     <div id="home-container-text">
                         <h1 class="delayMediumReveal">
-                            Développeur web passionné <span>spécialisé front-end</span>, avec de l'expérience back-end.
-                            Mon parcours allie créativité et compétence, résultant en des interfaces captivantes et
-                            fonctionnelles.
-
+                            Développeur web et administrateur réseaux confirmé <span>spécialisé front-end</span>, avec
+                            de l'expérience back-end.
+                            Mon parcours allie créativité et compétence, me permettant de développer des interfaces web
+                            captivantes et de gérer efficacement les infrastructures réseaux.
                         </h1>
                         <p class="typewriter">
-                            Je suis à l'écoute de la demande et je m'adapte à tout type de projet.
+                            Je suis à l'écoute de la demande et je m'adapte à tout type de projet, que ce soit pour la
+                            création d'un site web, la mise en place d'un réseau informatique ou la maintenance de
+                            serveurs.
                         </p>
 
-                        <a href="https://www.linkedin.com/in/augustin-plumecocq/" rel="noopener" target="_blank" class="delayExtraBigReveal">
+                        <a href="https://www.linkedin.com/in/augustin-plumecocq/" rel="noopener" target="_blank"
+                            class="delayExtraBigReveal">
                             linkedin
                         </a>
                     </div>
@@ -81,7 +86,7 @@
                         <h4 class="delayMediumReveal">Qui suis-je</h4>
                         <h2 class="delaySmallReveal"></h2>
                         <h3 class="delayMediumReveal">
-                            Développeur Frontend
+                            Développeur web et administrateur réseaux confirmé
                         </h3>
 
                         <p class="delayLargeReveal">
@@ -89,7 +94,7 @@
                             avant tout un esprit créatif animé par la passion du développement web.
                             Actuellement, je suis étudiant en tant que Développeur a YNOV.
                             Je crée des interfaces modernes, en me concentrant sur les performances,
-                            les animations, la réactivité et le référencement.
+                            les animations, la réactivité et le référencement. 
                         </p>
                         <nav class="delayLargeReveal">
                             <ul>
@@ -99,9 +104,9 @@
                                     </li>
                                 </a>
 
-                                <a href="https://www.linkedin.com/in/augustin-plumecocq/" >
+                                <a href="https://www.linkedin.com/in/augustin-plumecocq/">
                                     <li>
-                                        <img src="src/assets/icons/linkedin.svg"/>
+                                        <img src="src/assets/icons/linkedin.svg" />
                                     </li>
                                 </a>
 
@@ -160,36 +165,93 @@
             <div class="cont">
                 <h2 class="delaySmallReveal">Projets <span>.</span></h2>
                 <div id="projects">
-                    <article class="intervalCardReveal teslabank">
-                        <h3>Cocktail app</h3>
-                        <p>
-                            Site de recherche de cocktails, réalisé en HTML, CSS et Golang.
+                    <article class="intervalCardReveal ytech-academy">
+                        <h3>Ytech Academy</h3>
+                        <p>Application de soutien scolaire pour les étudiants fait par des étudiants, réalisée en Vue.js.
                         </p>
-
-                        <a href="https://github.com/A-PLCQ/GroupieTracker_Plumecocq_augustin.git" rel="noopener" target="_blank" id="teslabank">Voir le
-                            projet</a>
+                        <a class="view-project" data-project="ytech-academy-details">Voir le projet</a>
                     </article>
-
-                    <article class="intervalCardReveal naped">
-                        <h3>Promis</h3>
-                        <p>
-                            Site web de vente de luminaire écoresponsable, réalisé en VUEJS.
+                    <article class="intervalCardReveal aria">
+                        <h3>Aria</h3>
+                        <p>Application luttant contre le harcèlement et les violences de rue, réalisée en Ionic Angular.
                         </p>
-
-                        <a href="https://lamarquepromis.fr" rel="noopener" target="_blank" id="naped">Voir le
-                            projet</a>
+                        <a class="view-project" data-project="aria-details">Voir le projet</a>
                     </article>
-
-                    <article class="intervalCardReveal efront">
-                        <h3>Hangman</h3>
-                        <p>
-                            Pendue en ligne avec choix de difficultés, réalisé en HTML, CSS et Golang.
-                        </p>
-                        <a href="" rel="noopener" target="_blank" id="efront">Voir le
-                            projet</a>
+                    <article class="intervalCardReveal pixel">
+                        <h3>Pixel Adventures</h3>
+                        <p>Jeu de plateforme 2D inspiré de Super Mario Bros., réalisé avec Unity et les assets du pack Pixel Adventure</p>
+                        <a href="#" class="view-project" data-project="pixel-details">Voir le projet</a>
                     </article>
                 </div>
-                <a href="" rel="noopener" target="_blank" class="delayExtraBigReveal">Dépôts sur GitHub</a>
+                <a href="#" class="delayExtraBigReveal">Dépôts sur GitHub</a>
+            </div>
+
+            <!-- New detailed project cards -->
+            <div id="ytech-academy-details" class="project-details-card">
+                <div class="card-content">
+                    <div>
+                        <span>
+                            <h2>Ytech Academy</h2>
+                            <p>Ytech Academy est une application en Vue.js de soutien scolaire pour les étudiants, créée
+                                par des étudiants. Elle vise à éduquer l'avenir et innover le présent, offrant tout ce
+                                qu'un étudiant de Master 2 aurait voulu savoir en première année, sur une seule
+                                plateforme.</p>
+                            <p>Réalisée a ynov campus en colaboration avec des étudiants de la promo 2023/2024 de Ytech
+                                Academy.</p>
+                            <a href="https://github.com/A-PLCQ/Ytech-Academy">Dépôts sur GitHub</a>
+                        </span>
+                        <span>
+                            <h2>Visuel</h2>
+                            <img src="./src/assets/img/Ytech Academy.png" alt="">
+                        </span>
+                    </div>
+                    <button class="close-card">Fermer</button>
+                </div>
+            </div>
+
+            <div id="aria-details" class="project-details-card">
+                <div class="card-content">
+                    <div>
+                        <span>
+                            <h2>Aria</h2>
+                            <p>Aria est une application innovante développée en Ionic Angular, dédiée à la lutte contre
+                                le harcèlement et les violences de rue. Créée dans le cadre d'une association, Aria vise
+                                à avoir un impact positif sur tous les individus, qu'ils soient femmes, hommes, ou
+                                adolescents. L'application fournit des ressources et des outils pour sensibiliser les
+                                utilisateurs aux gestes à adopter pour se mettre en sécurité et se défendre contre les
+                                agressions de rue.</p>
+                            <p>Créée dans le cadre d'une association.</p>
+                            <a href="https://github.com/A-PLCQ/Aria">Dépôts sur GitHub</a>
+                        </span>
+                        <span>
+                            <h2>Visuel</h2>
+                            <img src="./src/assets/img/Aria.png" alt="Aria">
+                        </span>
+                    </div>
+                    <button class="close-card">Fermer</button>
+                </div>
+            </div>
+            <div id="pixel-details" class="project-details-card">
+                <div class="card-content">
+                    <div>
+                        <span>
+                            <h2>GameProgramming</h2>
+                            <p>Ce projet consiste à réaliser un jeu de plateforme 2D inspiré de Super Mario Bros., en
+                                utilisant le moteur de jeu Unity et les assets du pack Pixel Adventure 1 disponibles sur
+                                l'Asset Store Unity. L'objectif principal est de découvrir Unity, apprendre à développer
+                                un jeu 2D de type plateforme et comprendre les notions de gestion d'objets, de scripts
+                                et d'animations.</p>
+                            <p>Projet réalisé dans le cadre du cours de Game Programming à Ynov Campus.
+                            </p>
+                            <a href="https://github.com/A-PLCQ/Gameprogramming">dépôt GitHub</a>.
+                        </span>
+                        <span>
+                            <h2>Visuel</h2>
+                            <img src="./src/assets/img/pixel.png" alt="Pixel Adventures">
+                        </span>
+                    </div>
+                    <button class="close-card">Fermer</button>
+                </div>
             </div>
         </section>
 
@@ -257,12 +319,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-

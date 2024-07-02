@@ -3,7 +3,9 @@ import { hoverChangeExperience } from "./hoverChangeExperience.js";
 import { typeWrite } from "./typeWrite.js";
 import { hoverChangeDescription } from "./hoverChangeDescription.js";
 import { menu } from "./menu.js";
+import { detaille } from "./projetDetaille.js";
 
+detaille();
 menu();
 initScrollReveal();
 typeWrite(document.querySelector(".typewriter"));

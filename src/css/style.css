@@ -652,33 +652,33 @@ header nav .nav-list li a:hover {
     text-align: left
 }
 
-#s-projects .cont #projects .teslabank {
-    border: 1px solid #e51d37
+#s-projects .cont #projects .aria {
+    border: 1px solid #1C1570
 }
 
-#s-projects .cont #projects .teslabank:hover {
-    border: 1px solid #e51d37
+#s-projects .cont #projects .aria:hover {
+    border: 1px solid #1C1570
 }
 
-#s-projects .cont #projects .naped {
+#s-projects .cont #projects .ytech-academy {
     border: 1px solid #00a3ff
 }
 
-#s-projects .cont #projects .naped:hover {
+#s-projects .cont #projects .ytech-academy:hover {
     border: 1px solid #00a3ff
 }
 
-#s-projects .cont #projects .efront {
+#s-projects .cont #projects .pixel{
     border: 1px solid #a6fb98
 }
 
-#s-projects .cont #projects .efront:hover {
+#s-projects .cont #projects .pixel:hover {
     border: 1px solid #a6fb98
 }
 
 #s-projects .cont #projects>article {
     background-color: #151515;
-    height: auto;
+    height: 400px;
     padding: 32px;
     margin: 8px;
     flex-basis: calc(33% - 20px);
@@ -718,31 +718,33 @@ header nav .nav-list li a:hover {
     font-size: 1.8rem
 }
 
-#s-projects .cont #teslabank {
-    color: #e51d37
+#s-projects .cont #aria {
+    color: #1C1570
 }
 
-#s-projects .cont #teslabank::after {
-    background: linear-gradient(270deg, #e51d37 0%, #17161d 100%)
+#s-projects .cont #aria::after {
+    background: linear-gradient(270deg, #1C1570 0%, #17161d 100%)
 }
 
-#s-projects .cont #naped {
+#s-projects .cont #ytech-academy {
     color: #00a3ff
 }
 
-#s-projects .cont #naped::after {
+#s-projects .cont #ytech-academy::after {
     background: linear-gradient(270deg, #00a3ff 0%, #17161d 100%)
 }
 
-#s-projects .cont #efront {
+#s-projects .cont #pixel {
     color: #a6fb98
 }
 
-#s-projects .cont #efront::after {
+#s-projects .cont #pixel::after {
     background: linear-gradient(270deg, #a6fb98 0%, #17161d 100%)
 }
 
 #s-projects .cont a {
+    background: none;
+    border: none;
     color: #986dff;
     position: relative;
     font-size: 2rem;
@@ -782,6 +784,149 @@ header nav .nav-list li a:hover {
 #s-projects .cont a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left
+}
+
+/* Animation for project details card */
+.project-details-card {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.project-details-card.show {
+    display: flex;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.project-details-card .card-content {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1600px;
+    margin: auto;
+}
+
+.project-details-card .card-content div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-details-card .card-content h2 {
+    padding-bottom: 24px;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.project-details-card .card-content p {
+    font-size: 2rem;
+    line-height: 160%;
+    color: #9ca3af;
+    font-weight: 400;
+    margin: 32px 0px;
+}
+
+.project-details-card .card-content img {
+    width: 600px;
+    border-radius: 8px;
+}
+
+.project-details-card .card-content a {
+    background: none;
+    border: none;
+    color: #986dff;
+    position: relative;
+    font-size: 2rem;
+    font-weight: 400
+}
+
+.project-details-card .card-content a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -7px;
+    left: 0;
+    background: linear-gradient(270deg, #986dff 0%, #17161d 100%);
+    transform-origin: bottom right;
+    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1)
+}
+
+.project-details-card .card-content a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left
+}
+
+.project-details-card .card-content .close-card {
+    background-color: #986dff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: background-color 0.4s ease;
+    margin: 10px 0px;
+}
+
+.project-details-card .card-content .close-card:hover {
+    background-color: #764bcf;
+}
+ 
+
+@media screen and (max-width: 1200px) {
+    .project-details-card .card-content {
+        padding: 16px;
+    }
+    
+    .project-details-card .card-content {
+        max-width: 1140px;
+        overflow-y: auto;
+        max-height: 90%;
+    }
+    .project-details-card .card-content div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .project-details-card .card-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .project-details-card .card-content p {
+        font-size: 1.6rem;
+    }
+
+    .project-details-card .card-content img {
+        width: 500px;
+        border-radius: 8px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .project-details-card .card-content img {
+        width: 300px;
+        border-radius: 8px;
+    }
 }
 
 /* Skills */
