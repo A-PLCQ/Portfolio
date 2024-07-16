@@ -676,6 +676,23 @@ header nav .nav-list li a:hover {
     border: 1px solid #a6fb98
 }
 
+#s-projects .cont #projects .login {
+    border: 1px solid #986dff
+}
+
+#s-projects .cont #projects .login:hover {
+    border: 1px solid #986dff
+}
+
+#s-projects .cont #projects .promi {
+    border: 1px solid #e7dbc1
+}
+
+#s-projects .cont #projects .promi:hover {
+    border: 1px solid #e7dbc1
+}
+
+
 #s-projects .cont #projects>article {
     background-color: #151515;
     height: 400px;
@@ -740,6 +757,22 @@ header nav .nav-list li a:hover {
 
 #s-projects .cont #pixel::after {
     background: linear-gradient(270deg, #a6fb98 0%, #17161d 100%)
+}
+
+#s-projects .cont #login {
+    color: #986dff
+}
+
+#s-projects .cont #login::after {
+    background: linear-gradient(270deg, #986dff 0%, #17161d 100%)
+}
+
+#s-projects .cont #promi {
+    color: #e7dbc1
+}
+
+#s-projects .cont #promi::after {
+    background: linear-gradient(270deg, #e7dbc1 0%, #17161d 100%)
 }
 
 #s-projects .cont a {
@@ -839,6 +872,11 @@ header nav .nav-list li a:hover {
     color: #9ca3af;
     font-weight: 400;
     margin: 32px 0px;
+}
+
+.project-details-card .card-content ul li {
+    font-size: 1.8rem;
+    color: #9ca3af;
 }
 
 .project-details-card .card-content img {

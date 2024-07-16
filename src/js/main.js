@@ -11,6 +11,20 @@ initScrollReveal();
 typeWrite(document.querySelector(".typewriter"));
 
 hoverChangeExperience(
+  ".ynov",
+  `Ynov est une école d'ingénieurs qui propose des formations en informatique,
+  en design et en business. J'ai choisi de suivre le cursus informatique
+  pour acquérir des compétences en développement et programmation.
+  J'ai également choisi prévue de suivre le cursus en alternance pour acquérir
+  une expérience professionnelle et développer mes compétences en gestion
+  de projet. J'ai choisi Ynov, car c'est une école qui offre une formation
+  de qualité et qui est reconnue par les entreprises.`,
+  "Etudiant developpeur",
+  "Ynov Aix-en-Provence",
+  "3éme année"
+);
+
+hoverChangeExperience(
   ".engie",
   `Technicien de Déploiement de Fibre Optique chez Engie Solutions, 
   j'ai été impliqué dans le déploiement de réseaux à haut débit. 
@@ -54,20 +68,6 @@ hoverChangeExperience(
   "2023"
 );
 
-hoverChangeExperience(
-  ".ynov",
-  `Ynov est une école d'ingénieurs qui propose des formations en informatique,
-  en design et en business. J'ai choisi de suivre le cursus informatique
-  pour acquérir des compétences en développement et programmation.
-  J'ai également choisi prévue de suivre le cursus en alternance pour acquérir
-  une expérience professionnelle et développer mes compétences en gestion
-  de projet. J'ai choisi Ynov, car c'est une école qui offre une formation
-  de qualité et qui est reconnue par les entreprises.`,
-  "Etudiant developpeur",
-  "Ynov Aix-en-Provence",
-  "2éme année"
-);
-
 
 hoverChangeDescription(
   ".html",
@@ -101,4 +101,14 @@ hoverChangeDescription(
   ".cisco",
   "Cisco est une entreprise technologique mondiale qui conçoit, fabrique et vend des équipements de réseau."
 );
+
+hoverChangeDescription(
+  ".angular",
+  "Angular est un framework open-source développé par Google pour créer des applications Web dynamiques."
+);
+
+hoverChangeDescription(
+  ".ionic",
+  "Ionic est un framework open-source pour le développement d'applications mobiles hybrides basées sur HTML5."
+); 
 
